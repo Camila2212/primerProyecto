@@ -23,7 +23,7 @@ Route::post('/blog', [PostController::class, 'store'])->name('posts.store');
 Route::get('/blog/{post}',[PostController::class, 'show'])->name('posts.show');
 Route::get('/blog/{post}/edit',[PostController::class, 'edit'])->name('posts.edit');
 Route::patch('/blog/{post}',[PostController::class, 'update'])->name('posts.update');
-
+Esto es una prube sin sentido
 Route::view('/about','about')->name('about');
 
 
