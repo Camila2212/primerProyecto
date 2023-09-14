@@ -16,7 +16,7 @@
                 </a>
             </h2> &nbsp;
             <a href={{ route('posts.edit', $item)}}>Edit</a>
-        </div>   
+        </div>     
         @endforeach
     @endsection
 

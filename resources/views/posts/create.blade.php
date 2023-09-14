@@ -10,26 +10,8 @@
     @endforeach --}}
     <form action="{{ route('posts.store')}}" method="POST">
         @csrf
-        <label for="" >
-            Title <br>
-            <input type="text" name="title" value={{ old('title')}}>
-            <br>
-            @error('title')
-                <small style="color:rgb(255, 0, 0)">{{ $message }}</small>
-            @enderror
-        </label>
-        <br>
+        @include('posts.form')
 
-        <label for="">
-            Body <br>
-            <textarea name="body" >{{old('body')}}</textarea>
-            <br>
-            @error('body')
-                <small style="color:rgb(255, 0, 0)">{{ $message }}</small>
-             @enderror
-             <br>
-        </label>
-        <br>
             <button type="submit">Enviar</button>
     </form>
     <br>
